@@ -14,8 +14,6 @@ def main():
     st.set_page_config(page_title = "Voice Storyteller",
                        page_icon= "🔊")
     
-    st.write(st.secrets["GOOGLE_API_KEY"])
-    st.write(st.secrets["HF_KEY"])
 
     st.title("🪄 AI Magic: Turn Any Image into an Audio Story")
 
