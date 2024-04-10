@@ -4,12 +4,9 @@ from utils.models import *
 from dotenv import find_dotenv, load_dotenv
 
 
-#os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-headers = {
-    "authorization":st.secrets["GOOGLE_API_KEY"],
-    "authorization":st.secrets["HF_KEY"],
-    "content-type": "application/json"
-}
+
+st.write(st.secrets["GOOGLE_API_KEY"])
+st.write(st.secrets["HF_KEY"])
 
 load_dotenv(find_dotenv())
 
