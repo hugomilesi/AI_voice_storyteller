@@ -1,0 +1,9 @@
+transformers
+python-dotenv
+langchain
+streamlit
+langchain-google-genai
+accelerate
+timm 
+einops
+
