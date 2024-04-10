@@ -6,7 +6,7 @@ import requests
 import os
 
 HF_KEY = os.environ.get('HF_KEY')
-GOOGLE_KEY = os.environ.get("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 # image to text
 def img_to_text(img_path):
@@ -29,7 +29,7 @@ def img_to_text(img_path):
 def text_to_speech(scenario):
   """Text to Speech Model"""
 
-  llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_KEY)
+  llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_API_KEY)
 
   template = """
     You are a story teller;
